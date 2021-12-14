@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import sanityClient from "../client.js";
+import React from "react";
 import forest from "../assets/images/forest.avif";
 import bartomeuPhoto from "../assets/images/bartomeu.png";
 
