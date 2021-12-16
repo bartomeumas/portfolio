@@ -24,14 +24,14 @@ export default function Project() {
   return (
     <main className='bg-green-100 min-h-screen p-12'>
       <section className='container mx-auto'>
-        <h1 className='text-5xl flex justify-center cursive'>My Projects</h1>
+        <h1 className='text-5xl flex justify-center cursive'>Mis Proyectos</h1>
         <h2 className='text-lg text-gray-600 flex justify-center mb-12'>
-          Welcome to my projects page!
+          Estos son algunos de los proyectos en los que he trabajado!
         </h2>
         <section className='grid grid-cols-2 gap-8'></section>
         {projectData &&
           projectData.map((project, index) => (
-            <article className='relative rounded-lg shadow-xl bg-white p-16'>
+            <article className='relative rounded-lg shadow-xl bg-green-400 p-16 m-4'>
               <h3 className='text-gray-800 text-3xl font-bold mb-2 hover:text-red-700'>
                 <a
                   href={project.link}
@@ -41,28 +41,28 @@ export default function Project() {
                   {project.title}
                 </a>
               </h3>
-              <div className='text-gray-500 text-xs space-x-4'>
+              <div className='text-white text-xs space-x-4'>
                 <span>
-                  <strong className='font-bold'>Finished on: </strong>
+                  <strong className='font-bold'>Terminado el: </strong>
                   {new Date(project.date).toLocaleString()}{" "}
                 </span>
                 <span>
-                  <strong className='font-bold'>Company: </strong>
+                  <strong className='font-bold'>Compañia: </strong>
                   {project.place}{" "}
                 </span>
                 <span>
-                  <strong className='font-bold'>Type: </strong>
+                  <strong className='font-bold'>Tipo: </strong>
                   {project.projectType}
                 </span>
-                <p className='my-6 text-lg text-gray-700 leading-relaxed'>
+                <p className='my-6 text-lg text-white leading-relaxed'>
                   {project.description}
                 </p>
                 <a
                   href={project.link}
                   target='_blank'
                   rel='noopener noreferrer'
-                  className='text-red-500 font-bold hover:underline hover:text-red-400'>
-                  View the project{" "}
+                  className='text-black font-bold hover:underline hover:text-white'>
+                  Ver el proyecto{" "}
                   <span role='img' aria-label='right pointer'>
                     👉
                   </span>

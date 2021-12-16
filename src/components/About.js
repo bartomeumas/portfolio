@@ -14,7 +14,7 @@ export default function About() {
             className='rounded w-32 h-32 lg:w-64 lg:h-64 mr-8'
           />
           <div className='text-lg flex flex-col justify-center'>
-            <h1 className='cursive text-6xl text-green-600 mb-4'>
+            <h1 className='cursive text-6xl text-white mb-4'>
               Hola, soy Bartomeu.
             </h1>
             <div className='prose lg:prose-xl text-white'>

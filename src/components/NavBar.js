@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
+import ReactCountryFlag from "react-country-flag";
 
 export default function NavBar() {
   return (
-    <header className='bg-red-600'>
+    <header className='bg-green-600'>
       <div className='container mx-auto flex justify-between'>
         <nav className='flex'>
           <NavLink
@@ -18,13 +19,13 @@ export default function NavBar() {
             to='/project'
             className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
             activeClassName='text-red-100 bg-red-700'>
-            Projects
+            Proyectos
           </NavLink>
           <NavLink
             to='/about'
             className='inline-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800'
             activeClassName='text-red-100 bg-red-700'>
-            About me
+            Sobre mí
           </NavLink>
         </nav>
         <div className='inline-flex py-3 px-3 my-6'>
