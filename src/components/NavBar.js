@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
-import ReactCountryFlag from "react-country-flag";
 
 export default function NavBar() {
   return (
